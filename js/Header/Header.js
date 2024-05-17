@@ -178,9 +178,6 @@ function Header() {
     const subListItem = $$('.header_subnav-link');
     const subListLength = subListItem.length;
 
-    console.log(subListLink);
-    console.log(subListItem);
-
     for(var j = 0; j < subListLength; j++) {
         if (subListItem[j].href === subListLink) {
             subListItem[j].classList.add('active');
