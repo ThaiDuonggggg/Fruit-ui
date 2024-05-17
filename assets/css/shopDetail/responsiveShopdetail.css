@@ -1,0 +1,62 @@
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+    .margin-t-24 {
+        margin-top: 24px;
+    }
+
+    .banner_shop {
+        margin-top: 97px;
+    }
+
+    .container_introduce,
+    .content_body {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .container_introduce h3 {
+        margin-top: 24px;
+    }
+
+    .content_banner-desc {
+        right: 30px;
+    }
+    
+    .content_heading {
+        font-size: 2.3rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .vegetable_description {
+        padding: 15px;
+    }
+
+    .tab-pane_name h5 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .introduce-rating i {
+        font-size: 1rem;
+    }
+
+    .tab-pane_name {
+        margin-bottom: 8px;
+    }
+
+    .footer_introduce {
+        display: block;
+    }
+
+    .footer_introduce .btn-more {
+        width: 100%;
+        margin-top: 8px;
+    }
+}

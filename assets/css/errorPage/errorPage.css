@@ -1,0 +1,97 @@
+/* banner */
+.banner_shop {
+    margin-top: 154px;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/images/shop/cart-page-header-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.banner_shop-container {
+    padding: 48px 0;
+}
+
+.banner_shop-container h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--white-color);    
+}
+
+.banner_shop-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.banner_shop-container ul li:not(:first-child) {
+    padding-left: 8px;
+}
+
+.banner_shop-container ul li:not(:first-child)::after{
+    content: "/";
+    padding-right: 8px;
+    color: #6c757d;
+    float: left;
+}
+
+.banner_shop-container ul li a {
+    color: var(--primary-color);
+}
+
+.banner_shop-container ul li:last-child {
+    color: var(--white-color);
+}
+
+.banner_shop-container ul li:not(:last-child) a:hover {
+    color: #679d06;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    padding: 96px 0;
+}
+
+.page_body i{
+    font-size: 8rem;
+    color: var(--yellow-color);
+}
+
+.page_heading {
+    font-size: 8rem;
+    font-weight: 800;
+}
+
+.page_notation {
+    font-size: 4rem;
+}
+
+.container .btn_warning {
+    padding: 16px 48px;
+}
+
+.container .btn_warning span{
+    color: var(--heading-color);
+}
+
+@media (max-width: 730px) {
+    .container {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .page_body i {
+        font-size: 4rem;
+    }
+
+    .page_heading {
+        font-size: 4rem;
+    }
+
+    .page_notation {
+        font-size: 2.7rem;
+    }
+}

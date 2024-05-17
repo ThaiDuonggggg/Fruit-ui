@@ -1,0 +1,50 @@
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+    .m-t-48-mobile {
+        margin-top: 48px;
+    }
+
+
+    .banner_shop {
+        margin-top: 97px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .content_heading {
+        font-size: 2.3rem;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 739px) {
+    .content_favorite,
+    .content_shop-heading,
+    .content_search,
+    .content_body {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .content_search {
+        width: 100%;
+    }
+
+    .content_shop-heading {
+        font-size: 2.7rem;
+    }
+    
+    .content_heading {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+
+    .content_banner-desc {
+        right: 30px;
+    }
+    
+    .products_page-link {
+        padding: 4px 8px;
+    }
+}

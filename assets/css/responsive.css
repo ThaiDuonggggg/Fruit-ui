@@ -1,0 +1,284 @@
+/* Tablet & Mobile*/
+@media (max-width: 1023px) {
+   .header.top-hidden {
+        top: 0;
+    }
+
+    .navbar_logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar_logo-link {
+        font-size: 33.52px;
+    }
+
+    .header_container {
+        display: none;
+    }
+
+    .header_mobile-bars {
+        font-size: 2rem;
+        padding: 3px 16px;
+        color: var(--primary-color);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        transition: box-shadow .15s ease-in-out;    
+    }
+
+    .navbar_content {
+        justify-content: flex-start;
+        background-color: var(--white-color);
+        display: none;
+    }
+
+    .navbar_content.active {
+        display: block;
+    }
+
+    .navbar_content-list {
+       flex-direction: column;
+       align-items: flex-start;
+    }
+
+    .navbar_actions {
+        padding: 16px 0 16px 16px;
+        background-color: var(--white-color);
+        justify-content: flex-start;
+        display: none;
+    }
+    
+    .navbar_actions.active {
+        display: flex;
+    }
+
+    .navbar_content-item {
+        width: 100%;
+    }
+
+    .header_subnav {
+        width: 100%;
+        position: unset;
+    }
+
+    .header_subnav-item {
+        padding: 4px 10px;
+    }
+    
+    /* Content */
+    #content {
+        margin-top: 100px;
+        padding-top: 12%;
+        padding-bottom: 9%;
+    }
+
+    /* exotic */
+    .exotic_banner {
+        margin-top: 48px;
+    }
+ 
+}
+
+/*Tablet*/
+@media (min-width: 740px) and (max-width: 1023px) {
+    .m-t-24-tablet {
+        margin-top: 24px;
+    }
+
+    #header {
+        padding: unset;
+    }
+
+    .content_heading {
+        font-size: 5rem;
+    }
+
+    .content_slider {
+        margin-top: 48px;
+        height: 480px;
+    }
+
+    .products_tabs-list {
+        margin-top: 24px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .products_tab-item:last-child {
+        margin-top: 16px;
+    }
+
+    .bestseller_heading h1 {
+        font-size: 4.4rem;
+    }
+
+    .testimonial_heading h4 {
+        font-size: 2.2rem;
+    }
+
+    .testimonial_heading h1 {
+        font-size: 3.8rem;
+    }
+
+    .exotic_store-heading,
+    .exotic_store-title {
+        font-size: 4.9rem;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 739px){
+    .vegetable_description {
+        padding: 15px;
+    }
+    
+    .m-t-24-mobile {
+        margin-top: 24px;
+    }
+
+    .scroll-top {
+        right: 5px;
+    }
+
+    .search_input {
+        padding-left: 10px;
+    }
+
+    .search_input .btn_submit {
+        font-size: 1.4rem;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .search_input {
+        width: 100%;
+    }
+
+    .content_description {
+        font-size: 2.1rem;
+    }
+
+    .content_heading {
+        font-size: 3.5rem;
+    }
+
+    .content_slider {
+        margin-top: 48px;
+        height: 244px;
+    }
+
+    .prev-btn {
+        margin-left: 10px;
+    }
+
+    .next-btn {
+        margin-right: 10px;
+    }
+
+    .slider_text {
+        padding: 5px 10px;
+    }
+
+    .content_container {
+        padding-right: 24px;
+        padding-left: 24px;
+    }   
+
+    .services_container {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .products_content,
+    .products_container,
+    .products_discount,
+    .vegetable,
+    .exotic_store,
+    .exotic_banner,
+    .bestseller_container,
+    .quality,
+    .testimonial,
+    #footer {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .products_heading h1,
+    .footer_heading h1 {
+        font-size: 2.6rem;
+    }
+
+    .products_tabs-list {
+        display: block;
+        margin-top: 24px;
+    }
+    
+    .products_tab-item:not(:last-child) {
+        margin-right: unset;
+        margin-bottom: 12px;
+    }
+    
+    .products_body-cart span,
+    .vegetable_footer span {
+        font-size: 1.5rem;
+    }
+
+    .vegetable_heading {
+        font-size: 2.7rem;
+        margin-bottom: 20px;
+    }
+
+    .exotic_store-heading,
+    .exotic_store-title {
+        font-size: 3.5rem;
+    }
+
+    .exotic_price span:first-child {
+        font-size: 2.4rem;
+    }
+    .exotic_price span:last-child {
+        font-size: 2.1rem;
+    }
+
+    .bestseller_heading h1 {
+        font-size: 3.3rem;
+    }
+
+    .quality_container {
+        padding: 20px;
+    }
+
+    .testimonial_heading h4 {
+        font-size: 2.2rem;
+    }
+    .testimonial_heading h1 {
+        font-size: 3rem;
+    }
+
+    .testimonial_name .rating {
+        font-size: 1.1rem;
+    }
+
+    .testimonial_slider-item {
+        padding: 24px 12px;
+    }
+
+    .testimonial_name {
+        margin-left: 10px;
+    }
+
+    .testimonial_name h4 {
+        font-size: 1.6rem;
+    }
+    .input_search {
+        width: 50%;
+        padding: 16px 0;
+    }
+
+    .copy-right_body {
+        text-align: center;
+    }
+
+    .copy-right {
+        padding-top: 30px;
+    }
+}

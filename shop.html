@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/shop/shop.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/Shop/responsiveShop.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
+    <title>Fruit - Shop</title>
+</head>
+<body>
+    <div id="main">
+        <header class="header"></header>
+
+        <div class="banner_shop">
+           <div class="banner_shop-container">
+               <h1>Shop</h1>
+               <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Pages</a>
+                </li>
+                <li>
+                    Shop
+                </li>
+               </ul>
+           </div>
+        </div>
+
+        <div class="content_shop">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12">
+                        <h1 class="content_shop-heading">Fresh fruits shop</h1>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col l-3 m-12 c-12 content_favorite">
+                            <div class="form_group">
+                                <input type="text" placeholder="keywords" class="form_control" spellcheck="false">
+                                <button class="btn_clear">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                                <button class="btn_search-input">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col l-6"></div>
+                        <div class="col l-3 m-12 c-12 content_favorite">
+                            <div class="filter_search m-t-48-mobile">
+                                <label for="options" class="filter_search-label">Default Sorting:</label>
+                                <select name="" id="options" class="filter_search-options">
+                                    <option value="nothing">Nothing</option>
+                                    <option value="popularity">Popularity</option>
+                                    <option value="organic">Organic</option>
+                                    <option value="fantastic">Fantastic</option>
+                                </select>
+                            </div>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col l-3 m-12 c-12">
+                        <div class="content_body">
+                            <h4 class="content_heading">Categories</h4>
+                            <ul class="content_categories-list">
+                                <li class="content_categories-item">
+                                    <a href="#" class="content_categories-link">
+                                        <i class="fa-solid fa-apple-whole m-r-8"></i>
+                                        Apples
+                                    </a>
+                                    <span class="content_categories-quantity">(3)</span>
+                                </li>
+                                <li class="content_categories-item">
+                                    <a href="#" class="content_categories-link">
+                                        <i class="fa-solid fa-apple-whole m-r-8"></i>
+                                        Oranges
+                                    </a>
+                                    <span class="content_categories-quantity">(5)</span>
+                                </li>
+                                <li class="content_categories-item">
+                                    <a href="#" class="content_categories-link">
+                                        <i class="fa-solid fa-apple-whole m-r-8"></i>
+                                        Strawbery
+                                    </a>
+                                    <span class="content_categories-quantity">(2)</span>
+                                </li>
+                                <li class="content_categories-item">
+                                    <a href="#" class="content_categories-link">
+                                        <i class="fa-solid fa-apple-whole m-r-8"></i>
+                                        Banana
+                                    </a>
+                                    <span class="content_categories-quantity">(8)</span>
+                                </li>
+                                <li class="content_categories-item">
+                                    <a href="#" class="content_categories-link">
+                                        <i class="fa-solid fa-apple-whole m-r-8"></i>
+                                        Pumpkin
+                                    </a>
+                                    <span class="content_categories-quantity">(5)</span>
+                                </li>
+                            </ul>                        
+                        </div>
+                        <div class="content_body">
+                            <h4 class="content_heading">Additional</h4>
+                            <div class="additional_selection m-b-8">
+                                <input type="radio" name="fruit" id="organic" class="m-r-8">
+                                <label for="organic">Organic</label>
+                            </div>
+                            <div class="additional_selection m-b-8">
+                                <input type="radio" name="fruit" id="fresh" class="m-r-8">
+                                <label for="fresh">Fresh</label>
+                            </div>
+                            <div class="additional_selection m-b-8">
+                                <input type="radio" name="fruit" id="sales" class="m-r-8">
+                                <label for="sales">Sales</label>
+                            </div>
+                            <div class="additional_selection m-b-8">
+                                <input type="radio" name="fruit" id="discount" class="m-r-8">
+                                <label for="discount">Discount</label>
+                            </div>
+                            <div class="additional_selection m-b-8">
+                                <input type="radio" name="fruit" id="expired" class="m-r-8">
+                                <label for="expired">Expired</label>
+                            </div>
+                        </div>
+                        <div class="content_body">
+                            <h4 class="content_heading m-b-16">Featured products</h4>
+                            <div class="row a-items m-b-16">
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="featured-img">
+                                        <img src="./assets/images/shop/featur-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="featured-seller">
+                                        <h3>Big Banana</h3>
+                                        <div class="featured-rating m-b-8">
+                                            <i class="fa-solid fa-star rating-icon active"></i>
+                                            <i class="fa-solid fa-star rating-icon active"></i>
+                                            <i class="fa-solid fa-star rating-icon active"></i>
+                                            <i class="fa-solid fa-star rating-icon active"></i>
+                                            <i class="fa-solid fa-star rating-icon"></i>
+                                        </div>
+                                        <div class="featured-price">
+                                            <h5 class="featured-cost">2.99$</h5>
+                                            <h5 class="featured-discount">4.11$</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row a-items m-b-16">
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="featured-img">
+                                        <img src="./assets/images/shop/featur-2.jpg" alt="" class="rounded">
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="featured-seller">
+                                        <h3>Big Banana</h3>
+                                        <div class="featured-rating m-b-8">
+                                            <i class="fa-solid fa-star rating-icon active"></i>
+                                            <i class="fa-solid fa-star rating-icon active"></i>
+                                            <i class="fa-solid fa-star rating-icon active"></i>
+                                            <i class="fa-solid fa-star rating-icon active"></i>
+                                            <i class="fa-solid fa-star rating-icon"></i>
+                                        </div>
+                                        <div class="featured-price">
+                                            <h5 class="featured-cost">2.99$</h5>
+                                            <h5 class="featured-discount">4.11$</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row a-items">
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="featured-img">
+                                        <img src="./assets/images/shop/featur-3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="featured-seller">
+                                        <h3>Big Banana</h3>
+                                        <div class="featured-rating m-b-8">
+                                            <i class="fa-solid fa-star rating-icon active"></i>
+                                            <i class="fa-solid fa-star rating-icon active"></i>
+                                            <i class="fa-solid fa-star rating-icon active"></i>
+                                            <i class="fa-solid fa-star rating-icon active"></i>
+                                            <i class="fa-solid fa-star rating-icon"></i>
+                                        </div>
+                                        <div class="featured-price">
+                                            <h5 class="featured-cost">2.99$</h5>
+                                            <h5 class="featured-discount">4.11$</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_body">
+                            <div class="btn btn_add-cart btn-more">
+                                <span>View More</span>
+                            </div>
+                        </div>
+                        <div class="content_body position-relative">
+                            <div class="content_banner">
+                                <img src="./assets/images/shop/banner-fruits.jpg" class="content_banner-img"/>
+                            </div>
+                            <div class="content_banner-desc">
+                                <h3>
+                                    Fresh
+                                    <br/> 
+                                    Fruits
+                                    <br/> 
+                                    Banner
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-9">
+                        <div class="products_container">
+                            <div class="row">
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="products_body">
+                                        <div class="products_body-img">
+                                            <img src="./assets/images/fruite.jpg" alt="">
+                                        </div>
+                                        <div class="products_body-content">
+                                            <h2>Grapes</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="products_body-cart d-flex a-items j-space-between">
+                                                <span>$4.99 / kg</span>
+                                                <button class="btn btn_add-cart">
+                                                    <i class="fa-solid fa-bag-shopping add-cart-icon"></i>
+                                                    <span>Add to cart</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="products_item-fruits">
+                                            <span>Fruits</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="products_body">
+                                        <div class="products_body-img">
+                                            <img src="./assets/images/fruite-item-2.jpg" alt="">
+                                        </div>
+                                        <div class="products_body-content">
+                                            <h2>Grapes</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="products_body-cart d-flex a-items j-space-between">
+                                                <span>$4.99 / kg</span>
+                                                <button class="btn btn_add-cart">
+                                                    <i class="fa-solid fa-bag-shopping add-cart-icon"></i>
+                                                    <span>Add to cart</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="products_item-fruits">
+                                            <span>Fruits</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="products_body">
+                                        <div class="products_body-img">
+                                            <img src="./assets/images/fruite-item-3.jpg" alt="">
+                                        </div>
+                                        <div class="products_body-content">
+                                            <h2>Grapes</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="products_body-cart d-flex a-items j-space-between">
+                                                <span>$4.99 / kg</span>
+                                                <button class="btn btn_add-cart">
+                                                    <i class="fa-solid fa-bag-shopping add-cart-icon"></i>
+                                                    <span>Add to cart</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="products_item-fruits">
+                                            <span>Fruits</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="products_body">
+                                        <div class="products_body-img">
+                                            <img src="./assets/images/fruite-item-4.jpg" alt="">
+                                        </div>
+                                        <div class="products_body-content">
+                                            <h2>Grapes</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="products_body-cart d-flex a-items j-space-between">
+                                                <span>$4.99 / kg</span>
+                                                <button class="btn btn_add-cart">
+                                                    <i class="fa-solid fa-bag-shopping add-cart-icon"></i>
+                                                    <span>Add to cart</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="products_item-fruits">
+                                            <span>Fruits</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="products_body">
+                                        <div class="products_body-img">
+                                            <img src="./assets/images/fruite-item-4.jpg" alt="">
+                                        </div>
+                                        <div class="products_body-content">
+                                            <h2>Grapes</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="products_body-cart d-flex a-items j-space-between">
+                                                <span>$4.99 / kg</span>
+                                                <button class="btn btn_add-cart">
+                                                    <i class="fa-solid fa-bag-shopping add-cart-icon"></i>
+                                                    <span>Add to cart</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="products_item-fruits">
+                                            <span>Fruits</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="products_body">
+                                        <div class="products_body-img">
+                                            <img src="./assets/images/fruite-item-2.jpg" alt="">
+                                        </div>
+                                        <div class="products_body-content">
+                                            <h2>Grapes</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="products_body-cart d-flex a-items j-space-between">
+                                                <span>$4.99 / kg</span>
+                                                <button class="btn btn_add-cart">
+                                                    <i class="fa-solid fa-bag-shopping add-cart-icon"></i>
+                                                    <span>Add to cart</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="products_item-fruits">
+                                            <span>Fruits</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="products_body">
+                                        <div class="products_body-img">
+                                            <img src="./assets/images/fruite.jpg" alt="">
+                                        </div>
+                                        <div class="products_body-content">
+                                            <h2>Grapes</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="products_body-cart d-flex a-items j-space-between">
+                                                <span>$4.99 / kg</span>
+                                                <button class="btn btn_add-cart">
+                                                    <i class="fa-solid fa-bag-shopping add-cart-icon"></i>
+                                                    <span>Add to cart</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="products_item-fruits">
+                                            <span>Fruits</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="products_body">
+                                        <div class="products_body-img">
+                                            <img src="./assets/images/fruite-item-3.jpg" alt="">
+                                        </div>
+                                        <div class="products_body-content">
+                                            <h2>Grapes</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="products_body-cart d-flex a-items j-space-between">
+                                                <span>$4.99 / kg</span>
+                                                <button class="btn btn_add-cart">
+                                                    <i class="fa-solid fa-bag-shopping add-cart-icon"></i>
+                                                    <span>Add to cart</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="products_item-fruits">
+                                            <span>Fruits</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="products_body">
+                                        <div class="products_body-img">
+                                            <img src="./assets/images/fruite-item-4.jpg" alt="">
+                                        </div>
+                                        <div class="products_body-content">
+                                            <h2>Grapes</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="products_body-cart d-flex a-items j-space-between">
+                                                <span>$4.99 / kg</span>
+                                                <button class="btn btn_add-cart">
+                                                    <i class="fa-solid fa-bag-shopping add-cart-icon"></i>
+                                                    <span>Add to cart</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="products_item-fruits">
+                                            <span>Fruits</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products_page">
+                            <ul class="products_page-list">
+                                <li class="products_page-item">
+                                    <a href="#" class="products_page-link">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                    </a>
+                                </li>
+                                <li class="products_page-item">
+                                    <a href="#" class="products_page-link active">1</a>
+                                </li>
+                                <li class="products_page-item">
+                                    <a href="#" class="products_page-link">2</a>
+                                </li>
+                                <li class="products_page-item">
+                                    <a href="#" class="products_page-link">3</a>
+                                </li>
+                                <li class="products_page-item">
+                                    <a href="#" class="products_page-link">4</a>
+                                </li>
+                                <li class="products_page-item">
+                                    <a href="#" class="products_page-link">5</a>
+                                </li>
+                                <li class="products_page-item">
+                                    <a href="#" class="products_page-link">6</a>
+                                </li>
+                                <li class="products_page-item">
+                                    <a href="#" class="products_page-link">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer"></footer>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+    <script src="./js/Shop/shop.js"></script>
+
+</body>
+</html>

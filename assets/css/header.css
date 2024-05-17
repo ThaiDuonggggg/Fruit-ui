@@ -1,0 +1,248 @@
+#main {
+    overflow: hidden;
+}
+
+.header {
+    padding: 0 12px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--white-color);
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.header.top-hidden {
+    top: -56px;
+}
+
+.header.top-header {
+    top: 0px;
+}
+
+.header.header_box-shadow {
+    box-shadow: 0 .5rem 1rem rgba(0, 0 , 0, 0.15);
+}
+
+.header_container {
+    padding: 15px;
+    border-radius: 230px 100px;
+    background-color: var(--primary-color);
+}
+
+.header_address {
+    display: flex;
+    align-items: center;
+}
+
+.header_contact {
+    margin-left: 16px;
+}
+
+.header_contact-icon {
+    margin-right: 8px;
+    color: var(--yellow-color);
+}
+
+.header_contact-desc {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: var(--white-color);
+}
+
+.header_nav-item {
+    position: relative;
+    list-style: none;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.header_nav-item:not(:last-child)::after {
+    content: "/";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    color: var(--white-color);
+    transform: translateY(-50%);
+}
+
+.header_nav-link {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: var(--white-color);
+    transition: 0.15s linear;
+}
+
+.header_nav-link:hover {
+    color: var(--yellow-color);
+}
+
+/* scroll Top*/
+.scroll-top {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 30px;
+    bottom: 30px;
+    width: 45px;
+    height: 45px;
+    color: var(--black-color);
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 99;
+    display: none;
+}
+
+.scroll-top:hover {
+    background-color: #94cd2d;
+}
+
+/* Header Actions */
+.header_navbar-container {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 100px;
+} 
+
+.navbar_logo {
+    padding: 5px 0;
+}
+
+.navbar_logo-link {
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.navbar_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar_content-list {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_content-list a {
+    color: var(--text-color);
+    transition: 0.5s;
+}
+
+.navbar_content-list a:hover {
+    color: var(--primary-color);
+
+}
+
+.navbar_content-list a.active {
+    color: var(--primary-color);
+}
+
+.navbar_content-item {
+    list-style: none;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.navbar_content-item:hover .header_subnav {
+    display: block; 
+}
+
+.more-icon {
+    margin-left: 8px;
+}
+
+.header_subnav {
+    position: absolute;
+    width: 160px;
+    top: 100%;
+    left: 0;
+    background-color: #F4F6F8;
+    padding: 10px 0;
+    border-radius: 8px;
+    transform-origin: calc(100% - 90px) top;
+    animation: HeaderNotifyGrow ease-in 0.3s;
+    will-change: opacity, transform;
+    display: none;
+}
+
+@keyframes HeaderNotifyGrow {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.header_subnav-item {
+    list-style: none;
+    cursor: pointer;
+}
+
+.header_subnav-item:hover {
+    background-color: var(--primary-color);
+}
+
+.header_subnav-item:hover .header_subnav-link {
+    color: var(--white-color);
+}
+
+.header_subnav-link {
+    display: block;
+    padding: 4px 16px;
+    color: var(--black-color);
+}
+
+.header_subnav-item .header_subnav-link.active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+.navbar_actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar_actions-btn i{
+    color: var(--primary-color);
+}
+
+.btn-shopping {
+    position: relative;
+    margin-right: 24px;
+    font-size: 3.4rem;
+    cursor: pointer;
+}
+
+.quantity {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    right: -7px;
+    font-size: 1.4rem;
+    background-color: var(--yellow-color);
+    border-radius: 50%;
+}
+
+.btn-user {
+    font-size: 3.4rem;
+    cursor: pointer;
+}
+
+.btn-shopping:hover i,
+.btn-user:hover i{
+    color: #679d06;
+}

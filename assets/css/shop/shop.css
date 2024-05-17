@@ -1,0 +1,328 @@
+.banner_shop {
+    margin-top: 154px;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/images/shop/cart-page-header-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.banner_shop-container {
+    padding: 48px 0;
+}
+
+.banner_shop-container h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--white-color);    
+}
+
+.banner_shop-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.banner_shop-container ul li:not(:first-child) {
+    padding-left: 8px;
+}
+
+.banner_shop-container ul li:not(:first-child)::after{
+    content: "/";
+    padding-right: 8px;
+    color: #6c757d;
+    float: left;
+}
+
+.banner_shop-container ul li a {
+    color: var(--primary-color);
+}
+
+.banner_shop-container ul li:last-child {
+    color: var(--white-color);
+}
+
+.banner_shop-container ul li:not(:last-child) a:hover {
+    color: #679d06;
+}
+
+/*content*/
+.content_shop {
+    padding: 96px 0;
+}
+
+.content_shop-heading {
+    font-size: 4rem;
+    margin-bottom: 24px;
+}
+
+.form_group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    position: relative;
+}
+
+.form_control {
+    padding: 19px 19px;
+    flex: 1;
+    padding-right: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    z-index: 1;
+}
+
+.form_control:focus {
+    color: #747d88;
+    background-color: #fff;
+    border-color: #c0e284;
+    outline: 0;
+    box-shadow: 0 0 0 5px rgba(129, 196, 8, .25);
+}
+
+.form_control:not(:placeholder-shown) ~ .btn_clear {
+    display: block;
+}
+
+.btn_search-input {
+    padding: 19px 17px;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border-top-right-radius: 10px;   
+    border-bottom-right-radius: 10px;   
+    border-left: 1px solid #ced4da;
+}
+
+.btn_clear {
+    position: absolute;
+    right: 65px;
+    cursor: pointer;
+    display: none;
+    z-index: 1;
+}
+
+.btn_search-input i {
+    color: #747d88;
+}
+
+.filter_search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #f4f6f8;
+    border-radius: 10px;
+}
+
+.filter_search-options {
+    padding: 4px 2px;
+    border: none;
+    outline: none;
+    background: var(--white-color);
+    cursor: pointer;
+}
+
+/*Categories*/
+.content_body {
+    margin-top: 24px;
+}
+
+.content_heading {
+    font-size: 2.4rem;
+}
+
+.content_categories-list {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.content_categories-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 40px;
+}
+
+.content_categories-link {
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+
+.content_categories-link:hover {
+    color: var(--yellow-color);
+}
+
+/* featured */
+.featured-img img {
+    width: 100%;
+}
+
+.featured-rating i.active{
+    color: var(--yellow-color);
+}
+
+.featured-price {
+    display: flex;
+    align-items: center;
+}
+
+.featured-cost {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-right: 8px;
+}
+
+.featured-discount {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #dc3545;
+    text-decoration: line-through;
+}
+
+/* View more */
+.content_body .btn-more {
+    text-align: center;
+    padding: 16px 24px;
+}
+
+/* Banner */
+.content_banner {
+    width: 100%;
+    padding-top: 24px;
+    position: relative;
+}
+
+.content_banner-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content_banner-desc {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content_banner-desc h3{
+    color: var(--yellow-color);
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+/* Products */
+.products_body {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 24px;
+    background-color: var(--white-color);
+    transition: 0.5s;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+}
+
+.products_body:hover {
+    box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
+}
+
+.products_body-content {
+    padding: 24px;
+    border: 1px solid var(--yellow-color);
+    border-top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+
+.products_body-content p {
+    margin-bottom: 16px;
+}
+
+.products_body-img {
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.products_body-img img{
+    display: block;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.5s;
+}
+
+.products_body-img:hover img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: scale(1.3);
+}
+
+.products_body-cart span {
+    color: var(--heading-color);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.products_item-fruits {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 4px 10px;
+    color: var(--white-color);
+    background-color: var(--yellow-color);
+    border-radius: 10px;
+}
+
+.products_page {
+    margin-top: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products_page-prev {
+    padding: 8px 10px;
+}
+
+.products_page-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.products_page-item {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.products_page-link {
+    display: block;
+    padding: 8px 14px;
+    transition: 0.5s;
+    border: 1px solid var(--yellow-color);
+    border-radius: 10px;
+}
+
+.products_page-link:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.products_page-link.active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.products_page-prev i,
+.products_page-next i {
+    font-size: 1.4rem;
+}
